@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffbdbd; /* Background color for the love animation page */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative; /* Make the body a positioning context */
+}
+.surprise-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.love-animation {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.love-animation h1 {
+    color: #e74c3c; /* Text color for the "I Love You" message */
+    font-size: 3em;
+    margin: 0;
+    animation: pulse 2s infinite; /* Example animation, replace with your own */
+}
+
+
+
+
+ 
+/* Add more styling as needed */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#goback {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #db3466; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#goback:hover {
+    background-color: #2980b9; /* Change background color on hover */
+} #next-surprise button{
+    background-color: #db3466; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px; 
+    border: none; 
+    /border-radius: 5px; 
+    cursor: pointer; 
+     transition: background-color 0.3s ease; 
+ } 
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+

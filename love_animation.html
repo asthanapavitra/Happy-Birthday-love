@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="love_animation.css">
+    <title>I Love You</title>
+    
+</head>
+<body>
+    
+        
+    <div class="love-animation">
+        
+        <button id = "goback" onclick="goBack()">Go Back</button>
+        <h1>I Love You very </h1>
+
+        <h1>very very very much my cuto bandar</h1>
+        <section id="next-surprise">
+            <h2>Next Surprise Awaits!</h2>
+            <p>Click the button for the next surprise:</p>
+            <button id="videoButton">Next Surprise</button>
+        </section>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+            document.getElementById('videoButton').addEventListener('click', function() {
+    // Open the video page in the same tab
+                   window.location.href = 'video_page.html'; 
+
+            });
+        </script>
+        <!-- Add your animated content here -->
+    </div>
+</body>
+</html>
