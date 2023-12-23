@@ -1,15 +1,44 @@
 
-body {
+
+
+    
+    body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    /* background-image: url('image1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
+   
     color: #fff;
     position: relative;
+} 
+body {
+    /* Your existing styles for the body */
+    height: 100vh;
+    position: relative;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity */
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
+/* Add a container to center the content */
+.birthday-wishes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+
+/* Your existing styles for other elements */
+
 
 body::before {
     content: "";
@@ -56,7 +85,34 @@ main {
     z-index: 1; /* Set the z-index to ensure it's below the header */
 }
 /* ... (rest of your CSS code) */
-
+@media only screen and (max-width: 412px) {
+    main {
+        margin: 10px; /* Adjust the margin for smaller screens */
+    }
+    header h1{
+        margin-left: 0;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    main {
+        margin: 10%;
+        text-align: left; /* Adjust the margin for smaller screens */
+    }
+    header h1{
+        margin-left: 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: px) {
+    main {
+        margin: 10px; /* Adjust the margin for smaller screens */
+    }
+    header h1{
+        margin-left: 0;
+        text-align: center;
+    }
+}
 footer {
     background-color: #f07979;
     color: #fff;
